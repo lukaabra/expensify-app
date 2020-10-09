@@ -5,12 +5,15 @@
   "main": "app.js",
   "scripts": {
     "build": "webpack",
-    "dev-server": "webpack-dev-server"
+    "dev-server": "webpack-dev-server",
+    "test": "jest"
   },
   "author": "Luka Abramovic",
   "license": "ISC",
   "dependencies": {
+    "babel-jest": "^26.5.0",
     "css-loader": "^4.3.0",
+    "jest": "^26.5.0",
     "moment": "^2.29.0",
     "react": "^16.13.1",
     "react-addons-shallow-compare": "^15.6.2",
@@ -34,5 +37,10 @@
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "<rootDir>/jest.transform.js"
+    }
   }
 }
