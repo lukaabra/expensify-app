@@ -9,6 +9,7 @@ import getVisibleExpenses from './selectors/expenses';
 
 import AppRouter from './routers/AppRouter';
 import './styles/styles.css';
+import 'react-dates/lib/css/_datepicker.css';
 
 const store = configureStore();
 
