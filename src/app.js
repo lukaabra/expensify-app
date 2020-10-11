@@ -26,9 +26,6 @@ store.dispatch(addExpense({
     amount: 1000
 }));
 
-const state = store.getState();
-const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
-
 const jsx = (
     <Provider store={store}>
         <AppRouter />

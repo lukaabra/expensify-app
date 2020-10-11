@@ -4,7 +4,8 @@
   "description": "React Express Boilerplate",
   "main": "app.js",
   "scripts": {
-    "build": "webpack",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
     "test": "jest"
   },
